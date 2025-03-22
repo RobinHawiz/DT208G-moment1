@@ -1,11 +1,13 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
 
+const base = "/DT208G-moment1/";
 const root = "src/pages";
 const publicDir = "../assets";
 const outDir = "../../dist";
 
 export default defineConfig({
+  base,
   root,
   publicDir,
   build: {
