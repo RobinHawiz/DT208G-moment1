@@ -1,0 +1,29 @@
+@use "../abstracts/mixins" as m;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #212121;
+}
+
+main {
+  min-height: 80vh;
+  min-height: 80svh;
+  margin: 0 10%;
+  margin-top: 10rem;
+  @include m.media-query(mobile) {
+    margin-top: 7rem;
+  }
+}
+
+h1 {
+  text-align: center;
+}

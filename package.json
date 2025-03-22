@@ -1,0 +1,20 @@
+{
+  "name": "dt208g-moment1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "build-preview": "tsc && vite build && vite preview",
+    "clean-w": "if exist dist rd /s /q dist",
+    "clean-l": "rm -rf dist",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "sass": "^1.86.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0"
+  }
+}
