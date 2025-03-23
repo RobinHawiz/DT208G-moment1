@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
+import checker from "vite-plugin-checker";
 
 const base = "/DT208G-moment1/";
 const root = "src/pages";
@@ -34,4 +35,9 @@ export default defineConfig({
       "@styles": resolve(__dirname, "src/styles"),
     },
   },
+  plugins: [
+    checker({
+      typescript: true,
+    }),
+  ],
 });
