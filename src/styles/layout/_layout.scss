@@ -12,8 +12,6 @@ html {
 
 main {
   @include m.flex(center, normal, column);
-  min-height: 80vh;
-  min-height: 80svh;
   margin: 0 5%;
   margin-top: 10rem;
   @include m.media-query(mobile) {
