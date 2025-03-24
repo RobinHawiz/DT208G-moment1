@@ -15,12 +15,39 @@ body {
 }
 
 main {
+  @include m.flex(center, normal, column);
   min-height: 80vh;
   min-height: 80svh;
-  margin: 0 10%;
+  margin: 0 5%;
   margin-top: 10rem;
   @include m.media-query(mobile) {
     margin-top: 7rem;
+  }
+  table {
+    max-width: 125rem;
+    margin-top: 5rem;
+    border-collapse: collapse;
+    th {
+      padding-bottom: 2rem;
+    }
+    th:nth-child(1) {
+      width: 20%;
+      padding-right: 1rem;
+      text-align: left;
+    }
+    th:nth-child(2) {
+      width: 60%;
+      text-align: left;
+    }
+    th:nth-child(3) {
+      width: 20%;
+    }
+    td {
+      padding: 2rem 0;
+    }
+    td:nth-child(3) {
+      text-align: center;
+    }
   }
 }
 

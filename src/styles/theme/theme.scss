@@ -3,3 +3,10 @@
 h1 {
   color: v.$h1-color;
 }
+
+table {
+  color: v.$table-color;
+  td {
+    border-top: 0.1rem solid v.$table-color;
+  }
+}

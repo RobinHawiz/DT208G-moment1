@@ -1,13 +1,17 @@
 // Font colors
 $h1-color: #ffffff;
+$table-color: #ffffff;
 
-// Font sizes
+// Font sizes desktop
 $h1-font: 7rem;
+$table-font: 2rem;
 
+// Font sizes mobile
 $h1-font-mobile: 5rem;
+$table-font-mobile: 1.6rem;
 
 // Media query breakpoints
 
 $breakpoints: (
-  mobile: 639px,
+  mobile: 480px,
 );

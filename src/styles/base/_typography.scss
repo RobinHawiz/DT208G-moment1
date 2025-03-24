@@ -9,3 +9,11 @@ h1 {
     font-size: v.$h1-font-mobile;
   }
 }
+
+table {
+  font-size: v.$table-font;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  @include m.media-query(mobile) {
+    font-size: v.$table-font-mobile;
+  }
+}
