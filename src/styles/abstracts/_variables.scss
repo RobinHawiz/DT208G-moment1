@@ -1,9 +1,13 @@
+@use "sass:color";
+
 // Colors
 $body-color: #212121;
 
 // Font colors
 $h1-color: #ffffff;
 $table-color: #ffffff;
+$a-color: #ffffff;
+$a-color-hover: color.adjust($a-color, $lightness: -30%);
 
 // Font sizes desktop
 $h1-font: 7rem;
