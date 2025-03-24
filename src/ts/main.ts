@@ -6,6 +6,7 @@ import { ICourseInfo } from "@ts/ICourseInfo";
 import { DataList } from "@ts/DataList";
 // Functions
 import { fetchData } from "@ts/fetch-data";
+import { displayDataList } from "@ts/display-data";
 import { getLocalStorageData, updateLocalStorage } from "@ts/local-storage";
 
 async function main(): Promise<void> {
@@ -23,6 +24,8 @@ async function main(): Promise<void> {
     );
     updateLocalStorage<ICourseInfo>("Courses", data.getDataList());
   }
+
+  displayDataList(data.getDataList());
 }
 
 main();
