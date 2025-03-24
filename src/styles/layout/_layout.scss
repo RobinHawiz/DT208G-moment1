@@ -17,6 +17,63 @@ main {
   @include m.media-query(mobile) {
     margin-top: 7rem;
   }
+  form {
+    @include m.flex(end, space-between, row);
+    gap: 1rem;
+    max-width: 66rem;
+    width: 100%;
+    margin-top: 2rem;
+    @include m.media-query(mobile) {
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .label-input-container {
+      @include m.flex(normal, space-between, row);
+      width: 100%;
+    }
+    label {
+      @include m.flex(normal, normal, column);
+    }
+    label:nth-child(2) {
+      margin: 0 1rem;
+    }
+    input {
+      width: 100%;
+      margin-top: 0.3rem;
+      padding: 0.3rem;
+    }
+    .button-wrapper {
+      position: relative;
+      pointer-events: none;
+      &:hover::before {
+        transform: translate(10%, 15%);
+      }
+      & button:hover {
+        transform: translateY(-10%);
+      }
+    }
+    .button-wrapper::before {
+      width: 10rem;
+      height: 3.2rem;
+      content: "";
+      top: 0;
+      left: 0;
+      border-radius: 0.8rem;
+      transition: transform 0.2s ease;
+      position: absolute;
+      pointer-events: none;
+    }
+    button {
+      width: 10rem;
+      height: 3.2rem;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      position: relative;
+      pointer-events: auto;
+    }
+  }
   table {
     max-width: 66rem;
     width: 100%;

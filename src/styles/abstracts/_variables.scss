@@ -2,19 +2,31 @@
 
 // Colors
 $body-color: #212121;
+$form-button-bg-color: #212121;
+$form-button-bg-color-before: #111111;
+$form-button-bg-color-hover: #ffffff;
 
 // Font colors
 $h1-color: #ffffff;
+$form-color: #ffffff;
+$form-button-color: #ffffff;
+$form-button-color-hover: color.adjust($form-button-color, $lightness: -80%);
 $table-color: #ffffff;
 $a-color: #ffffff;
 $a-color-hover: color.adjust($a-color, $lightness: -30%);
 
 // Font sizes desktop
 $h1-font: 7rem;
+$form-font: 2rem;
+$form-input-font: 1.8rem;
+$form-button-font: 1.8rem;
 $table-font: 2rem;
 
 // Font sizes mobile
 $h1-font-mobile: 5rem;
+$form-font-mobile: 1.6rem;
+$form-input-font-mobile: 1.4rem;
+$form-button-font-mobile: 1.4rem;
 $table-font-mobile: 1.6rem;
 
 // Media query breakpoints
