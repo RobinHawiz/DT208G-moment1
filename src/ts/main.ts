@@ -8,6 +8,8 @@ import { DataList } from "@ts/DataList";
 import { fetchData } from "@ts/fetch-data";
 import { displayDataList } from "@ts/display-data";
 import { getLocalStorageData, updateLocalStorage } from "@ts/local-storage";
+import { initFormValidation } from "@ts/validate-form";
+import { processFormData } from "./process-form-data";
 
 async function main(): Promise<void> {
   let data: DataList<ICourseInfo>;
@@ -26,6 +28,7 @@ async function main(): Promise<void> {
   }
 
   displayDataList(data.getDataList());
+  initFormValidation(processFormData);
 }
 
 main();
