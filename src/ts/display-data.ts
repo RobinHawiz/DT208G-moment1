@@ -2,6 +2,11 @@ import { ICourseInfo } from "./ICourseInfo";
 
 // This function cannot be generic because it relies on properties specific to the ICourseInfo interface.
 export function displayDataList(data: Array<ICourseInfo>): void {
+  // Remove the previous tbody elem if it exists.
+  let prevTbody: HTMLTableSectionElement | null =
+    document.querySelector("tbody");
+  if (prevTbody) prevTbody.remove();
+
   let table: HTMLTableElement = document.querySelector("table")!;
   let tbody: HTMLTableSectionElement = document.createElement("tbody");
 
