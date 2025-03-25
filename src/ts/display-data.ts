@@ -1,4 +1,4 @@
-import { ICourseInfo } from "./ICourseInfo";
+import { ICourseInfo } from "@ts/ICourseInfo";
 
 // This function cannot be generic because it relies on properties specific to the ICourseInfo interface.
 export function displayDataList(data: Array<ICourseInfo>): void {
