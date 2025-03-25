@@ -39,7 +39,7 @@ export function initFormValidation(submitCallback: (e: Event) => void) {
     }
     // If the course code is valid but progression is incorrect, show an error for progression.
     if (
-      courseCodeIsNotValid &&
+      !courseCodeIsNotValid &&
       !["A", "B", "C"].includes(progressionInput.value)
     ) {
       validateField(
