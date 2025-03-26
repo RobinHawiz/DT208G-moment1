@@ -2,7 +2,7 @@ import { ICourseInfo } from "@ts/ICourseInfo";
 import { DataList } from "@ts/DataList";
 import { getLocalStorageData } from "@ts/local-storage";
 
-export function initFormValidation(submitCallback: (e: Event) => void) {
+export function initFormValidation(submitCallback: (e: Event) => void): void {
   const form: HTMLFormElement = document.querySelector("form")!;
   form.addEventListener("submit", validateForm);
 
